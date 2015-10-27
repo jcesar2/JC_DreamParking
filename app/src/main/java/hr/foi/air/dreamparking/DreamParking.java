@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
 public class DreamParking extends AppCompatActivity {
 
@@ -12,7 +15,19 @@ public class DreamParking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dream_parking);
+
+        Button btnDetails = (Button) findViewById(R.id.btn_details);
+        btnDetails.setOnClickListener(new View.OnClickListener(){
+            @Override
+        public void onClick(View v){
+                Intent i = new Intent(getApplicationContext(), DiscountDetailsActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu (Menu menu){

@@ -2,4 +2,6 @@
     <string name="app_name">DreamParking</string>
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
+    <string name="helloMessage">Ovo je početna stranica DreamParkinga</string>
+    <string name="btn_details">Klikni</string>
 </resources>
